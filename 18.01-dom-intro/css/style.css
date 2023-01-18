@@ -1,0 +1,28 @@
+/*ways to access CSS using css selectors*/
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*select id add styles to it*/
+#demo {
+    font-size:50px;
+}
+/*select class add styles to it*/
+.list-examples {
+    border:2px solid lightcoral;
+}
+
+#product-list {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.product {
+    border:1px solid lightgrey;
+    width:20%;
+    margin:1rem;
+    padding:10px;
+}
+
+.overview-list-item {
+    color:cadetblue;
+}
