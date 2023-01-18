@@ -3,29 +3,29 @@
 ## Overview used methods
 
 - ### Get Element by ID
-    Returns Element by id 
+    Returns element by id 
     ```javascript
     let element = document.getElementById('id');
     ```
 - ### Get Elements by classname
-    Returns Element by classname 
+    Returns element by classname 
     ```javascript
     let element = document.getElementsByClassName('id');
     ```
 - ### Get Element by tagname
-    Returns Element by tagname 
+    Returns element by tagname 
     ```javascript
     let element = document.getElementsByTagName('tagname');
     ```
 
 - ### Get Element using querySelector (by id)
-    Returns Element by id 
+    Returns element by id 
     ```javascript
     let elementAsQuery = document.querySelector('#id');
     ```
 
 - ### Get Element using querySelector (by class)
-    Returns elements by classname 
+    Returns element by classname 
     ```javascript
     let elementAsQuery = document.querySelector('.classname');
     ```
@@ -47,6 +47,19 @@
     ```javascript
      element.appendChild(newLi);
     ```
+
+- ### Travel parent elements using closest(id)
+    Closest will travel all parent elements of this element until it finds the first that matches the css selector.
+    ```javascript
+    let itemFound = element.closest('#id');
+    ```
+
+- ### Check if element matches selector.
+    The matches() method of the Element interface tests whether the element would be selected by the specified CSS selector.
+    ```javascript
+    let labelFound = label.matches('.className'))
+    ```
+  
 
 # Resources
 
