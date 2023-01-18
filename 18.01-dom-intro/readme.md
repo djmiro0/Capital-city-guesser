@@ -43,7 +43,7 @@
     ```
 
 - ### Add element as child of existing element using appenChild(element)
-    Create an element (e.g. appending an li to an ul element)
+    Add an element as child of existing element (e.g. appending an li to an ul element)
     ```javascript
      element.appendChild(newLi);
     ```
