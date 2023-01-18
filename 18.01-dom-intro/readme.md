@@ -8,12 +8,12 @@
     let element = document.getElementById('id');
     ```
 - ### Get Elements by classname
-    Returns Element by id 
+    Returns Element by classname 
     ```javascript
     let element = document.getElementsByClassName('id');
     ```
 - ### Get Element by tagname
-    Returns Element by id 
+    Returns Element by tagname 
     ```javascript
     let element = document.getElementsByTagName('tagname');
     ```
@@ -25,13 +25,13 @@
     ```
 
 - ### Get Element using querySelector (by class)
-    Returns elements by id 
+    Returns elements by classname 
     ```javascript
     let elementAsQuery = document.querySelector('.classname');
     ```
     
 - ### Get multiple elements using querySelectorAll (by class)
-    Returns elements by class 
+    Returns multiple elements by classname 
     ```javascript
     let elementAsQuery = document.querySelectorAll('.classname');
     ```
