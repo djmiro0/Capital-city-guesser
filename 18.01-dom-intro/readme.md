@@ -67,3 +67,5 @@
 
 [MDN GetElementById spec example](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
+[MDN Element matches spec example](https://developer.mozilla.org/en-US/docs/Web/API/Element/matches)
+
