@@ -33,17 +33,17 @@
 - ### Get multiple elements using querySelectorAll (by class)
     Returns elements by class 
     ```javascript
-    let elementAsQuery = document.querySelector('.classname');
+    let elementAsQuery = document.querySelectorAll('.classname');
     ```
 
 - ### Create element using createElement
-    Create an element 
+    Create an element (e.g. creating a li element)
     ```javascript
      let newLi = document.createElement('li');
     ```
 
-- ### Add element as child of existing element using appenChild(newLi)
-    Create an element 
+- ### Add element as child of existing element using appenChild(element)
+    Create an element (e.g. appending an li to an ul element)
     ```javascript
      element.appendChild(newLi);
     ```
