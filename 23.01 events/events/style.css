@@ -1,0 +1,20 @@
+body {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    font-size: 40px;
+}
+
+
+.light{
+    background-color: darkgray;
+    color: #000
+}
+
+.bigFont{
+    font-size: 90px;
+}
+
+button{
+    font-size: 40px;
+}
