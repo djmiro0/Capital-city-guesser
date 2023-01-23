@@ -71,7 +71,7 @@ console.log(main.classList);
 
 main.classList.add("light");
 
-main.classList.remove("someClassName");
+main.classList.remove("light");
 
 //================================================================
 //5.adding events to the element:
@@ -82,6 +82,7 @@ const footer = document.querySelector("footer");
 // applying onclick event on it directly:
 btn.onclick = () => {
   main.classList.toggle("light");
+  
   btn.innerText = main.classList.contains("light") ? "Dark Theme" : "Light Theme";
 };
 
@@ -89,18 +90,23 @@ btn.onclick = () => {
 
 const myFunc = () => {
   console.log("good afternoon");
+  footer.classList.toggle("hideEl");
   footer.style.fontSize = "70px";
   // footer.classList.toggle("bigFont");
 };
 
 main.addEventListener("click", myFunc);
 
-main.addEventListener("click", () => {
+main.addEventListener("click", (e) => {
   console.log("hello again");
 });
 
+
 const changeColor = (event) => {
+    console.log(event.target)
+
   event.target.style.color = "red";
+
   console.log(event.target)
 };
 

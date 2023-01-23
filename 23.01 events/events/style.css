@@ -18,3 +18,10 @@ body {
 button{
     font-size: 40px;
 }
+
+/* bootstrap uses a class 'd-none' */
+
+.hideEl {
+    display: none;
+}
+
