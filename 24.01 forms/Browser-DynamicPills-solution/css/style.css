@@ -12,7 +12,7 @@ section {
   left: 25%;
 }
 
-section.active {
+.active {
   opacity: 1;
 }
 
