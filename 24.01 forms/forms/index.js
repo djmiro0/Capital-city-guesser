@@ -3,9 +3,7 @@ const box = document.querySelector(".box");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-// if(event.target.innerText.includes('cancel')){
-//     return;
-// }
+
   console.log(document.querySelector("#input123").value);
 
   const userInput = event.target.myInput.value;
