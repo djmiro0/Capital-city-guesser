@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
+  },
+  "autograding": {
+    "setup": "cd ./node_modules/puppeteer && npm run postinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DigitalCareerInstitute/Browser-ToggleItems",
+    "id": 200816535
+  },
+  "dependencies": {
+    "jest": "^29.3.1",
+    "jest-puppeteer": "^6.1.1"
+  }
+}

@@ -6,9 +6,9 @@ body {
 }
 
 
-.light{
-    background-color: darkgray;
-    color: #000
+.x{
+    display: none;
+   
 }
 
 .bigFont{

@@ -81,7 +81,7 @@ const footer = document.querySelector("footer");
 
 // applying onclick event on it directly:
 btn.onclick = () => {
-  main.classList.toggle("light");
+  main.classList.toggle("x");
   
   btn.innerText = main.classList.contains("light") ? "Dark Theme" : "Light Theme";
 };
