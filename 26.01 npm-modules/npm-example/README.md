@@ -1,15 +1,7 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Use of NPM example
 
-This project has been created using **webpack-cli**, you can now run
+To install the modules
+> `npm i`
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+To run the webserver and start the app:
+> `npm run serve`
