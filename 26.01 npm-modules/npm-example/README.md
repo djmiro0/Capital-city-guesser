@@ -1,7 +1,8 @@
 # 🚀 Use of NPM example
 
-To install the modules
+## Get started
+Install the modules
 > `npm i`
 
-To run the webserver and start the app:
+Run the application
 > `npm run serve`
