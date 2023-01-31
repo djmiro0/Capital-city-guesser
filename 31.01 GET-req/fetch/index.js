@@ -43,12 +43,12 @@ async function fetchCountryByName(e) {
 
     console.log(data[0]);
 
-      h1.innerText = data[0].name;
+      h1.innerText = data[0].name; 
       img.src = data[0].flags.png;
       population.innerText = data[0].population;
       area.innerText = data[0].area;
       region.innerText = data[0].region;
-      capital.innerText = data[0]["capital"];
+      capital.innerText = data[0].capital;
 
   } catch (err) {
     console.log(err);
