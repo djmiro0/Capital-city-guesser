@@ -1,7 +1,5 @@
 const btnActivity = document.querySelector('#btn-activity');
-
 const activityList = document.querySelector('.activity-list');
-
 const activityResult = document.querySelector('.activity-result');
 
 const getRandomActivity = async () => {
@@ -31,7 +29,7 @@ const storeActivityInLocalStorage = (activity) => {
 
     }
 }
-
+//Generate an h3 & h4 element for eacht activityResult.
 const generateActivity = (activityResult) => {
     return `<h3>${activityResult.activity}</h3>
             <h4>${activityResult.type}</h4>
