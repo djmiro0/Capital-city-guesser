@@ -53,5 +53,5 @@ btnActivity.addEventListener('click', ()=> {
     //load the random activity 
     getRandomActivity();
 });
-
+//function is called when page is loaded
 loadActivitiesFromLocalStorage();
