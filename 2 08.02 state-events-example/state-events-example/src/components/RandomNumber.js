@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './RandomNumber.css';
 
 export default function RandomNumber() {
  //declare the state and set it default to 0 
@@ -14,7 +15,7 @@ export default function RandomNumber() {
  //VIEW / JSX / HTML 
   return (
     <div>
-        <h1>{number}</h1>
+        <h1 className={number > 50 ? 'above-50':''}>{number}</h1>
         <button className='btn btn-primary' onClick={clickHandler} >Show a random number</button>
     </div>
   )
