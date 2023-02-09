@@ -12,6 +12,7 @@ function App() {
         <Navbar title="Homepage - Welcome" language="DE" color="red" />
 
         <div className='container'>
+          <CreatePost postsprop={posts} setPosts={setPosts} />
           <PostList postsprop={posts} />
         </div>
     </div>
