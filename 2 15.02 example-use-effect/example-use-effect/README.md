@@ -2,9 +2,9 @@
 
 ## Get Started
 
-> npm i
+-  `npm i`
 
-> npm start
+- `npm start`
 
 ## Project Structure
 There are three components 
