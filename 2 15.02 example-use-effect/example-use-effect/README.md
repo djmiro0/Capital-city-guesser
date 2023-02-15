@@ -7,7 +7,7 @@
 - `npm start`
 
 ## Project Structure
-There are three components 
+There are five components. More info for each component see below.
 
 
 ## UseEffect structure
