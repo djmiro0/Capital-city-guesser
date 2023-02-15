@@ -49,7 +49,7 @@ There are five components. More info for each component see below.
 ```
 
 ### TimerComponent.jsx
-The timercomponent also contains a timer which executes a function every 1000 ms and increases the time state. 
+The timercomponent also contains a timer which executes a function every 1000 ms and increases the time state value by one. 
 
 Return function also cleans up the timer when component unmounts. 
 
