@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# UseEffect Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Get Started
 
-## Available Scripts
+> npm i
 
-In the project directory, you can run:
+> npm start
 
-### `npm start`
+## Project Structure
+There are three components 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## UseEffect structure
+```javascript
+  useEffect(() => {
+    //logic we want to execute 
+    //when component unmounts/disappears => clean up the timer
+    return () => {
+        //instructions to execute when umounting component or when dependency value changes. e.g. cleanup of timer
+    }
 
-### `npm test`
+  }, [])//[] = allows us to add dependencies. (if empty effect is only called on first render)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
+### ExampleComponent.jsx
+  The example component contains a useEffect prints a console.log on first render
+### FetchDataComponent.jsx
+  The fetchdata component fetches the data when component renders for the first time.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Greeting.jsx
+  Greeting.jsx contains a useEffect which has a dependency `name`. Every time the name changes the effect function will be called. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### RepeatMessage.jsx
+  RepeatMessage.jsx contains a useEffect which has a dependency `message`. Every time the message changes the effect function will be called. This results in a new timer, that's created, printing the name to the console. 
+  When component unmounts or dependency value changes, the return function will clean up the timer.
+  
+  ```javascript
+  useEffect(() => {
+    const id = setInterval(() => {
+        console.log(message);
+    },2000)
+    //when component unmounts clean up the timer.
+    //when the dependency value changes clean the timer and create a new one.
+    return () => {
+       clearInterval(id);
+    }
+  },[message])
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### TimerComponent.jsx
+The timercomponent also contains a timer which executes a function every 1000 ms and increases the time state. 
 
-### `npm run eject`
+Return function also cleans up the timer when component unmounts. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```javascript
+  useEffect(() => {
+    //creates one timer which will execute a function every second.
+    const id = setInterval(() => {
+        setTime(time => time + 1);
+    },1000)
+    
+    //when component unmounts/disappears => clean up the timer
+    return () => {
+        clearInterval(id);
+    }
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  }, [])
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
