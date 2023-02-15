@@ -32,7 +32,7 @@ There are five components. More info for each component see below.
   Greeting.jsx contains a useEffect which has a dependency `name`. Every time the name changes the effect function will be called. 
 
 ### RepeatMessage.jsx
-  RepeatMessage.jsx contains a useEffect which has a dependency `message`. The effect function will be called every time the message state changes. This results in a new timer, that's created, printing the name to the console. 
+  RepeatMessage.jsx contains a useEffect which has a dependency `message`. The effect function will be called every time the message prop changes. This results in a new timer, that's created, printing the new message to the console. 
   When component unmounts or dependency value changes, the return function will clean up the timer using `clearInterval`.
   
   ```javascript
