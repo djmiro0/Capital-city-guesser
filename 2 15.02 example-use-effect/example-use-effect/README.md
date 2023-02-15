@@ -24,7 +24,7 @@ There are three components
 ```
 
 ### ExampleComponent.jsx
-  The example component contains a useEffect prints a console.log on first render
+  The example component contains a useEffect which prints a console.log on first render
 ### FetchDataComponent.jsx
   The fetchdata component fetches the data when component renders for the first time.
 
@@ -33,7 +33,7 @@ There are three components
 
 ### RepeatMessage.jsx
   RepeatMessage.jsx contains a useEffect which has a dependency `message`. Every time the message changes the effect function will be called. This results in a new timer, that's created, printing the name to the console. 
-  When component unmounts or dependency value changes, the return function will clean up the timer.
+  When component unmounts or dependency value changes, the return function will clean up the timer using `clearInterval`.
   
   ```javascript
   useEffect(() => {
