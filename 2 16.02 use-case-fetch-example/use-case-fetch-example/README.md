@@ -10,7 +10,7 @@ We fetch data and conditionally render a spinner/loader component while data is 
 You can find all components inside the `/components` folder. Notice each component has its own folder. 
 
 ### ListPosts.jsx 
-This component contains a function `loadPosts` that loads data from jsonplaceholder. (our API endpoint)`https://jsonplaceholder.typicode.com/posts`. 
+This component contains a function `loadPosts` that loads data from jsonplaceholder. (our API endpoint) `https://jsonplaceholder.typicode.com/posts`. 
 
 We placed the `loadPosts` function inside the `useEffect`. Notice we only use the setters when the component is mounted. The code is asynchronous which means the component could already have been unmounted while the call is still in progress. By checking whether the component is mounted we are sure that we're not using state setters for a component that is already unmounted.
 
