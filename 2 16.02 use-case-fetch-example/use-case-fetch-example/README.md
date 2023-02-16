@@ -41,7 +41,7 @@ This is our Header component. Using bootstrap navbar
 ### BootstrapSpinner.jsx
 This contains our spinner. We are using the spinner inside `ListPosts.jsx.` 
 
-## App.js
+### App.js
 In `App.js` you can see many of the above components used together.`App.js` also has a button element that allows us to hide or display the `ListPosts` component. This is also done using conditional rendering: 
 ``` javascript
   function ContentPosts(){
