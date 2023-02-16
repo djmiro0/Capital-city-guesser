@@ -7,7 +7,7 @@ We fetch data and conditionally render a spinner/loader component while data is 
 - > `npm start `
 
 ## Project Structure
-You can find all components inside the `/components` folder. Notice Each component has its own folder. 
+You can find all components inside the `/components` folder. Notice each component has its own folder. 
 
 ### ListPosts.jsx 
 This component contains a function `loadPosts` that loads data from jsonplaceholder. `https://jsonplaceholder.typicode.com/posts`. 
@@ -23,7 +23,7 @@ We placed the `loadPosts` function inside the `useEffect`. Notice we only use th
         }
 ```
 
-We are conditionally rendering the spinner when the state `isLoading` is set to true. If isLoading is false we show the list of posts.
+We are conditionally rendering the spinner when the state `isLoading` is set to true. If `isLoading` is false we show the list of posts.
 
 ```javascript
    {isLoading ? <BootstrapSpinner /> : (posts.map((post) =>(<PostItem key={post.id} post={post} />)))}
@@ -42,7 +42,7 @@ This is our Header component. Using bootstrap navbar
 This contains our spinner. We are using the spinner inside ListPosts.jsx. 
 
 ## App.js
-In app.js you can see many of the above components used together. App.js also has a button element that allows us to hide or display the ListPosts component. This is also done using conditional rendering: 
+In `App.js` you can see many of the above components used together.`App.js` also has a button element that allows us to hide or display the `ListPosts` component. This is also done using conditional rendering: 
 ``` javascript
   function ContentPosts(){
     if(showPosts){
