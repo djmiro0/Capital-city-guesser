@@ -11,17 +11,17 @@ function App() {
     <div>
       <Header />
       <div className='content'>
+        {/* update the showPosts using the onClick handler */}
          <button className='btn btn-primary' 
                  onClick={() => setShowPosts(show => !show)}>
                   {showPosts ? 'Hide posts' : 'Show posts'}
           </button>
-
-          
+        
         <ContentPosts />
       </div>
     </div>
   );
-
+  //Conditionally render the listposts or a paragraph that says the posts are hidden. 
   function ContentPosts(){
     if(showPosts){
       return <ListPosts />

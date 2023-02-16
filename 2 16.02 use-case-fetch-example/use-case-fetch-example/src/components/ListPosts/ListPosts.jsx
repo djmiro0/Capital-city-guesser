@@ -10,23 +10,21 @@ export default function ListPosts() {
  
   useEffect(() => {
     let mounted = true;
-
+    //function loadposts inside useEffect
     const loadPosts = async () => {
         setIsLoading(true);
         const response = await fetch('https://jsonplaceholder.typicode.com/posts'); //fetch data from our endpoint (http get request)
         const fetchedPosts = await response.json(); //converting our json response into js object.
-        // console.log("The fetched posts are", fetchedPosts);
+       
         if(mounted) {
             //only update the state when the component is mounted
-            console.log("Setting items");
-            setIsLoading(false);
+            console.log("Setting items"); 
+            setIsLoading(false); 
             setPosts(fetchedPosts);
         }
-     
     }
-
+    //calling the loadposts
     loadPosts();
-
     return () => {
         //this will be run before useEffect is called 
         //this will be run when component unmounts.
