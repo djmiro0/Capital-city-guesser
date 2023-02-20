@@ -5,21 +5,23 @@ export default function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://jsonplaceholder.typicode.com/users', {
-      method: 'POST',
-      body: JSON.stringify(user),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-  }
+    if (user.password === e.target.confirm.value) {
+      fetch("https://jsonplaceholder.typicode.com/users", {
+        method: "POST",
+        body: JSON.stringify(user),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    } else {
+      alert("password doesn't match, please confirm your password");
+    }
+  };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-    >
+    <form onSubmit={handleSubmit}>
       <h1>Sign up</h1>
       <h3>Username:</h3>
       <input
@@ -46,6 +48,8 @@ export default function Signup() {
           setUser((prev) => ({ ...prev, password: e.target.value }))
         }
       />
+      <h3>Confirm Password:</h3>
+      <input required type="password" name="confirm" />
       <button> Signup </button>
     </form>
   );
