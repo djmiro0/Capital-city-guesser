@@ -13,7 +13,7 @@ export default function Signup() {
           "Content-type": "application/json; charset=UTF-8",
         },
       })
-        .then((response) => response.json())
+        .then((res) => res.json())
         .then((data) => console.log(data));
     } else {
       alert("password doesn't match, please confirm your password");
