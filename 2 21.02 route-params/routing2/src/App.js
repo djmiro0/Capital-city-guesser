@@ -3,17 +3,20 @@ import Header from "./components/Header";
 import About from "./components/pages/About";
 import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Navigate } from "react-router-dom"
 
 function App() {
+  const loggedin = true;
+
   return (
     <div className="App">
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={loggedin ? <Home /> : <Navigate to="/login" /> } />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<Navigate to="/" /> }/>
       </Routes>
     </div>
   );

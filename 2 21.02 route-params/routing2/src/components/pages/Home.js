@@ -6,13 +6,10 @@ export default function Home() {
   console.log(users)
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
-      .then((res) => res.json())
-      .then((data) => console.log(data));
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .then((data) => setUsers(data));
-  }, []);
+  },[]);
 
   return (
     <div>
