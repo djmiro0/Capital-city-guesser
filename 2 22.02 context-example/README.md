@@ -38,10 +38,10 @@ Next we can import the context where we would like to use it. In our case we imp
 import { AuthContext } from './context/AuthContext';
 ```
 
-Now that we have imported teh context, we have to tell React which components will be able to use this context. We can do this by configuring a provider.  
+Now that we have imported the context, we have to tell React which components will be able to use this context. We can do this by configuring a provider.  
 Inside the provider we place, as its children, the components that should have access to the context.
 
-In the below example NameContext provides value `state1`, `state2` and `setState` to its children components. 
+In the below example NameContext provides value `state1`, `state2` and `setState` to its children components. The value is now set as an object: `{state1, state2, setState1}`.
 
 ```javascript
 <NameContext.Provider value={{state1, state2, setState1}}>
@@ -50,8 +50,7 @@ In the below example NameContext provides value `state1`, `state2` and `setState
     <ChildComponent3 />
 </NameContext.Provider>
 ```
-
-
+> Note: tomorrow (23/02) we will see how we can integrate our global state inside the context.
 
 ## Components
 
