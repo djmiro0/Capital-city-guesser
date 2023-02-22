@@ -33,7 +33,7 @@ export {NameContext}; //export the AuthContext to the rest of the application.
 
 ```
 
-Next we can import the context where we would like to use it. In our case we imported it in `App.js`
+We can import the context where we would like to use it. In our case we imported it in `App.js`
 ```javascript
 import { AuthContext } from './context/AuthContext';
 ```
@@ -50,7 +50,7 @@ In the below example NameContext provides value `state1`, `state2` and `setState
     <ChildComponent3 />
 </NameContext.Provider>
 ```
-> Note: tomorrow (23/02) we will see how we can integrate our global state inside the context.
+
 
 ## Components
 
