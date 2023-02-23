@@ -35,7 +35,7 @@ In this example we built an `AuthContext` which will hold the following state :
 export const AuthContext = createContext();
  ````
 
- Secondly the AuthContextProviderComponent which is the react component we will use to place our Provider inside. 
+ Secondly the AuthContextProviderComponent which is the react component we created that will act as our Provider. 
 
   ````javascript
 //props.children : children allow us to get access to all children of the component
