@@ -35,7 +35,7 @@ In this example we built an `AuthContext` which will hold the following state :
 export const AuthContext = createContext();
  ````
 
- Secondly the AuthContextProviderComponent which is the react component we created that will act as our Provider. 
+ Secondly the AuthContextProviderComponent which is the react component that will act as our Provider. 
 
   ````javascript
 //props.children : children allow us to get access to all children of the component
@@ -66,3 +66,33 @@ export default function AuthContextProviderComponent({children}){
     )
 }
  ````
+
+ In the above sample we are setting the provider value to `{isAuthenticated, handleLogin}`. All children of our ProviderComponent will have access to these values.
+
+ We then can use the provider in our `App.js` as follows:
+  ````javascript
+ function App() {
+  return (
+    <div className="App">
+     <AuthContextProviderComponent>
+      <Header />
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/logout" element={<Logout />} />
+          <Route path="*" element={<p>I don't know this page. There was a 404 error</p>} />
+      </Routes>
+      </AuthContextProviderComponent>
+    </div>
+  );
+}
+  ````
+
+Notice in the above code sample that all react elements are placed as children of AuthContextProviderComponent. 
+
+All children of AuthContextProviderComponent have access to its context. 
+
+
+## Using our context inside the Header component
+
