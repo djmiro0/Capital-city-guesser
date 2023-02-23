@@ -106,7 +106,7 @@ Next we are using the `useContext` hook to use the context inside the component.
   const {isAuthenticated} = useContext(AuthContext);
   ````
 
-  In the above code example you can see we destructure from our context value`{isAuthenticated, handleLogin}` the isAuthenticated state. 
+  In the above code example you can see we destructure from our context value`{isAuthenticated, handleLogin}` the `isAuthenticated` state. 
 
   Now we can use this `isAuthenticated` state to conditionally render either the `PrivateNavigation` component or the `PublicNavigation` component: 
 
