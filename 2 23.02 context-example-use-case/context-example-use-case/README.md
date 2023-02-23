@@ -7,8 +7,12 @@ The use case is here that we would like to sign in a user into our application. 
 
 Notice our `src` folder is subdivided in different folders: 
 - `components `
-    This is where we store our components, which we will be using in different views.
+
+    This is where we store our components, which we will be using in different views. In our case we have the Header component and the PrivateNavigation and PublicNavigation component.
 - `context`
+
+    Here we will be storing our different contexts. In this specific case you van find the `AuthContext` here.
+
 - `views` 
     
     This folder contains our 'page' components. This folder has all the components which are mapped to a route. 
