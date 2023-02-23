@@ -10,5 +10,6 @@ Notice our `src` folder is subdivided in different folders:
     This is where we store our components, which we will be using in different views.
 - `context`
 - `views` 
+    
     This folder contains our 'page' components. This folder has all the components which are mapped to a route. 
     e.g. `Home.jsx` is mapped to `/`, `Login.jsx` is mapped to `/login`, `Logout.jsx `is mapped to `/logout` etc.
