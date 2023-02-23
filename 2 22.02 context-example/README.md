@@ -51,6 +51,15 @@ In the below example NameContext provides value `state1`, `state2` and `setState
 </NameContext.Provider>
 ```
 
+### Accessing global state inside a component using `useContext`. 
+We can access the global state from the component using the `useContext` hook. 
+
+we have to make sure we import the NameContext. As a parameter to the useContext we supply the context we would like to use to get values from.
+```javascript
+const {state1, state2} = useContext(NameContext);  
+```
+
+
 
 ## Components
 
