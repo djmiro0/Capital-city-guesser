@@ -89,10 +89,27 @@ export default function AuthContextProviderComponent({children}){
 }
   ````
 
-Notice in the above code sample that all react elements are placed as children of AuthContextProviderComponent. 
-
-All children of AuthContextProviderComponent have access to its context. 
+Notice in the above code sample that all react elements are placed as children of AuthContextProviderComponent. All children of AuthContextProviderComponent have access to its context. 
 
 
-## Using our context inside the Header component
+## Accessing our context inside the Header component
+Inside `components/Header/Header.jsx` we are using the context to determine whether the user is authenticated or not. 
 
+We are first importing the useContext and the AuthContext 
+  ````javascript
+import { useContext } from 'react'
+import { AuthContext } from '../../context/AuthContext';
+  ````
+
+Next we are using the `useContext` hook to use the context inside the component. See code example below:
+  ````javascript
+  const {isAuthenticated} = useContext(AuthContext);
+  ````
+
+  In the above code example you can see we destructure from our context value`{isAuthenticated, handleLogin}` the isAuthenticated state. 
+
+  Now we can use this `isAuthenticated` state to conditionally render either the `PrivateNavigation` component or the `PublicNavigation` component: 
+
+  ```` javascript
+  {isAuthenticated ? <PrivateNavigation /> : <PublicNavigation />}
+  ````
