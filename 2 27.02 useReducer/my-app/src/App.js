@@ -1,23 +1,32 @@
 import { useReducer, useState } from "react";
 import "./App.css";
+import AddMovies from "./components/AddMovies";
+import UserContextProvider from "./components/context/UserContext";
 import User from "./components/User";
 
 function App() {
-  const [count, setCount] = useState(0); 
+  const [count, setCount] = useState(0);
 
   const reducer = (state, action) => {
     switch (action.type) {
       case "increment":
-        return {count: state.count + 1};
+        return { count: state.count + 1 };
       case "decrement":
-        return {count: state.count - 1};
-        case "set-to-payload":
-          return {count: action.payload}
+        return { count: state.count - 1 };
+      case "set-to-payload":
+        return { count: action.payload };
       default:
         return state;
     }
-  }
-  const [state, dispatch] = useReducer(reducer, {count: 0});
+    // if(action.type=== "increment"){
+    //   return {count: state.count + 1};
+    // }else if(action.type==="decrement"){
+    //   return {count: state.count - 1};
+    // }else if(action.type === "set-to-payload"){
+    //   return {count: action.payload}
+    // }
+  };
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   return (
     <div className="App">
@@ -28,10 +37,18 @@ function App() {
       <hr />
       Count with useReducer: {state.count}
       <br />
-      <button onClick={() => dispatch({type: "decrement"})}>-</button>
-      <button onClick={() => dispatch({type: "increment"})}>+</button>
-      <button onClick={() => dispatch({type: "set-to-payload", payload: 101})} > set to payload </button>
-      <User/>
+      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+      <button
+        onClick={() => dispatch({ type: "set-to-payload", payload: 101 })}
+      >
+        set to payload
+      </button>
+      {/* step 3: wrap your components with the global store (the function from UserContext)}:*/}
+      <UserContextProvider>
+        <User />
+        <AddMovies />
+      </UserContextProvider>
     </div>
   );
 }
