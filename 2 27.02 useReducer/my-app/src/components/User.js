@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useReducer } from "react";
 
 export default function User() {
   const initialState = {
@@ -7,15 +7,12 @@ export default function User() {
     favMovies: [],
   };
 
-  const [nameInput, setNameInput] = useState("");
-  const [emailInput, setEmailInput] = useState("");
-
   const reducer = (state, action) => {
     switch (action.type) {
       case "add-name":
-        return { ...state, username: nameInput };
+        return { ...state, username: action.payload };
       case "add-email":
-        return { ...state, email: emailInput };
+        return { ...state, email: action.payload };
       default:
         return state;
     }
@@ -28,11 +25,11 @@ export default function User() {
   return (
     <div>
       <h3> username: </h3>
-      <input type="text" onChange={(e) => setNameInput(e.target.value)} />
-      <button onClick={()=> dispatch({type: "add-name" })}>add name</button>
+      <input type="text" onChange={(e) => dispatch({type: "add-name", payload: e.target.value})} />
+     
       <h3> email: </h3>
-      <input type={"email"} onChange={(e) => setEmailInput(e.target.value)} />
-      <button onClick={()=> dispatch({type: "add-email"})}> add email </button>
+      <input type={"email"} onChange={(e) => dispatch({type: "add-email", payload: e.target.value})}  />
+      
     </div>
   );
 }
