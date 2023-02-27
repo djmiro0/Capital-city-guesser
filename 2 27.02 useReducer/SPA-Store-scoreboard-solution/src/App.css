@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 30%;
+  margin: 0 auto;
+  border: 3px solid rgb(228, 227, 227);
+  border-radius: 4px;
+}
+
+h1 {
+  background-color: #c0f1f1;
+  padding: 4px;
+}
+
+h2 {
+  color: cadetblue;
+}
+
+h3 {
+  color: gray;
+  margin-top: 24px;
+  background-color: #c0f1f1;
+  padding: 8px;
+}
+
+button {
+  background-color: #c0f1f1;
+  font-weight: bold;
+  font-size: larger;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: white;
+  outline: auto;
+}
+
+button:active {
+  background-color: #40c4c4;
+}
+
+.score {
+  color: #40c4c4;
+}
