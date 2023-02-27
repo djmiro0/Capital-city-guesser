@@ -32,8 +32,8 @@ function App() {
     <div className="App">
       Count: {count}
       <br />
-      <button onClick={() => setCount(count - 1)}>-</button>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      <button onClick={() => setCount((prev) => prev - 1)}>-</button>
+      <button onClick={() => setCount((prev) => prev + 1)}>+</button>
       <hr />
       Count with useReducer: {state.count}
       <br />
@@ -44,7 +44,7 @@ function App() {
       >
         set to payload
       </button>
-      {/* step 3: wrap your components with the global store (the function from UserContext)}:*/}
+      {/*useContext step 3: wrap your components with the global store (the function from UserContext)}:*/}
       <UserContextProvider>
         <User />
         <AddMovies />

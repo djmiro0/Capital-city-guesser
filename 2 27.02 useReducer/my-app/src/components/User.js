@@ -1,30 +1,13 @@
-import React, { useReducer, useContext } from "react";
+import React, { useContext } from "react";
 import { UserContext } from "./context/UserContext";
 
 export default function User() {
-  const initialState = {
-    username: "",
-    email: "",
-    favMovies: [],
-  };
+ 
 
-  const reducer = (state, action) => {
-    switch (action.type) {
-      case "add-name":
-        return { ...state, username: action.payload };
-      case "add-email":
-        return { ...state, email: action.payload };
-      default:
-        return state;
-    }
-  };
+  //useContext step 4: extracting the needed data from the global state:
+  const { dispatch, state } = useContext(UserContext);
 
-  const [state, dispatch] = useReducer(reducer, initialState);
-
-  //step 4: extracting the needed data from the global state:
-  const { greeting } = useContext(UserContext);
-
-  console.log(greeting);
+  console.log(state);
 
   return (
     <div>
