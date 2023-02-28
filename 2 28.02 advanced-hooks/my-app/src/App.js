@@ -2,6 +2,8 @@ import "./App.css";
 import { useEffect, useRef, useState, useCallback } from "react";
 import ToDo from "./components/ToDo";
 import List from "./components/List";
+import Posts from "./components/Posts";
+import Users from "./components/Users";
 
 function App() {
   //the purpose: saving a variable without causing a rerender.
@@ -13,7 +15,7 @@ function App() {
   // const count = {current: 0}
   const [inputVal, setInputVal] = useState("");
 
-  const [myVar, setMyVar] = useState(0)
+  const [myVar, setMyVar] = useState(0);
 
   //count.current +=1
   useEffect(() => {
@@ -27,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-    <button onClick={()=> setMyVar(myVar +1)}>change myVar</button>
+      <button onClick={() => setMyVar(myVar + 1)}>change myVar</button>
       render count: {count.current} <hr />
       previous state: {prevState.current}
       <hr />
@@ -36,6 +38,8 @@ function App() {
       <ToDo />
       <hr />
       <List getItems={getItems} />
+      <Users />
+      <Posts />
     </div>
   );
 }
