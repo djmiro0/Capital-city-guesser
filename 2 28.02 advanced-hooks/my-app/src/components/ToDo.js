@@ -1,5 +1,4 @@
 import { useState, useMemo } from "react";
-import ListTodos from "./List";
 
 export default function ToDo() {
   const [count, setCount] = useState(0);
