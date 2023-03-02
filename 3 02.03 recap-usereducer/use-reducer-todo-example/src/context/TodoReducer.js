@@ -14,8 +14,7 @@ export const addTodo = (payload) => ({
 
 //reducer function --> reponsible for changing the state.
 export const todoReducer = (currentState = initialState, action) => {
-    if(action.type === ADD_TODO){
-        
+    if(action.type === ADD_TODO){ //which type of action was provided
         return {
             ...currentState,
             todos:[...currentState.todos, action.payload] //payload = todoitem
