@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  font-family: "DynaPuff", cursive;
+  margin-top: 50px;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+
+.container a div {
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  text-align: bottom;
+  font-size: 30px;
+}
+
+.container a section:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.first {
+  background-image: url(/src/images/infitcompanylogo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.secondSection {
+  position: relative;
+  top: 100px;
+}
+
+.second {
+  background-image: url(/src/images/tic-tac-toe-g8a8527653_1920.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.third {
+  background-image: url(/src/images/bravura.logo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container a p {
+  font-size: 20px;
+  color: #f0f5ef;
+  text-align: center;
+}
+
+@media screen and (max-width: 982px) {
+  .secondSection {
+    position: relative;
+    top: 0px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

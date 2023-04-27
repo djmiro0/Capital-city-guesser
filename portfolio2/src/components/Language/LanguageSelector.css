@@ -1,0 +1,29 @@
+.language-selector-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "DynaPuff", cursive;
+}
+
+.language-selector-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+
+.language-selector-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.language-selector-button.active {
+  background-color: #fff;
+  color: #000;
+}

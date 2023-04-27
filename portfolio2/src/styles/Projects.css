@@ -1,0 +1,33 @@
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects a {
+  text-decoration: none;
+}
+.projects div {
+  width: 300px;
+  height: 200px;
+  background-color: #0000006d;
+  font-family: "DynaPuff", cursive;
+  font-size: 20px;
+  color: #f0f5ef;
+  margin: 40px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f00;
+  box-shadow: 10px 10px 20px #f00;
+}
+
+.projects div:hover {
+  background-color: #f00;
+  cursor: pointer;
+  transform: translateY(10px);
+  color: rgb(0, 0, 0);
+  box-shadow: none;
+}

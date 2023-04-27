@@ -1,0 +1,21 @@
+{
+  "Home": "HOME",
+  "Contact me": "CONTACT ME",
+  "About": "ABOUT ME",
+  "Projects": "PROJECTS",
+  "FAVORITES": "FAVORITES",
+  "Contact": "Contact",
+  "Me": "Me",
+  "Hi there, I'm Djordje": "Hi there, I'm Djordje",
+  "I am a Frontend": "I am a Frontend",
+  "text": "I am a frontend web developer with expertise in HTML, CSS, JavaScript, and React. Additionally, I am familiar with backend technologies to create full-stack web applications. Currently, I am in the final stages of my studies at the DCI Digital Career Institute, where I am learning to become a full-stack web developer. Outside of my work, I enjoy sports, cooking, and traveling to explore new cultures and experiences. I am based in Germany and always looking for opportunities to further develop my skills and contribute to exciting projects in the tech industry.",
+  "Developer": "Developer",
+  "You can also use:": "You can also use:",
+  "aboutMeText": "Hello! My name is Djordje and I am a frontend web developer originally from Serbia, currently living in Germany. I specialize in working with JavaScript, HTML, CSS, React, and TypeScript to create visually stunning and highly functional websites. In addition to my current skill set, I am currently studying to become a full stack web developer, which I will complete in June. I have always had a passion for the frontend technologies and I love working with them to create intuitive and engaging user experiences. I take pride in my attention to detail, and I am constantly learning and pushing myself to improve my skills. Whether I'm working on a personal project or collaborating with a team, I approach each project with enthusiasm and dedication to create the best possible outcome. Thanks for stopping by my website, and please don't hesitate to get in touch if you have any questions or if you'd like to work together!",
+  "password": {
+    "label": "password",
+    "placeholder": "password placeholder..."
+  },
+  "location": "Enter the location",
+  "Address": "Enter the address"
+}

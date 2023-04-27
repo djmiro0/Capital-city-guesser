@@ -1,0 +1,21 @@
+{
+  "Home": "DAHEIM",
+  "Contact me": "KONTAKTIERE MICH",
+  "Projects": "PROJEKTE",
+  "About": "ÜBER MICH",
+  "Hi there, I'm Djordje": "Hallo, ich bin Djordje",
+  "I am a Frontend": "Ich bin ein Frontend",
+  "Developer": "Entwickler",
+  "FAVORITES": "FAVORITEN",
+  "Contact": "Kontaktiere",
+  "Me": "mich",
+  "text": "Ich bin ein Frontend-Webentwickler mit Expertise in HTML, CSS, JavaScript und React. Darüber hinaus bin ich vertraut mit Backend-Technologien, um Full-Stack-Webanwendungen zu erstellen. Derzeit befinde ich mich in der Endphase meines Studiums am DCI Digital Career Institute, wo ich lerne, ein Full-Stack-Webentwickler zu werden. Außerhalb meiner Arbeit genieße ich Sport, Kochen und Reisen, um neue Kulturen und Erfahrungen zu entdecken. Ich bin in Deutschland ansässig und suche immer nach Möglichkeiten, meine Fähigkeiten weiterzuentwickeln und zu aufregenden Projekten in der Tech-Branche beizutragen.",
+  "You can also use:": "Sie können auch verwenden:",
+  "aboutMeText": "Hallo! Mein Name ist Djordje und ich bin ein Frontend-Webentwickler aus Serbien, der derzeit in Deutschland lebt. Ich habe mich auf die Arbeit mit JavaScript, HTML, CSS, React und TypeScript spezialisiert, um visuell beeindruckende und hochfunktionale Websites zu erstellen. Zusätzlich zu meinen derzeitigen Fähigkeiten studiere ich derzeit, um ein Full-Stack-Webentwickler zu werden, den ich im Juni abschließen werde. Ich habe immer eine Leidenschaft für die Frontend-Technologien und ich liebe es, mit ihnen intuitive und ansprechende Benutzererfahrungen zu schaffen. Ich bin stolz auf meine Liebe zum Detail und ich lerne ständig dazu und fordere mich heraus, meine Fähigkeiten zu verbessern. Ob ich an einem persönlichen Projekt arbeite oder mit einem Team zusammenarbeite, ich gehe jedes Projekt mit Begeisterung und Hingabe an, um das bestmögliche Ergebnis zu erzielen. Vielen Dank, dass Sie auf meiner Website vorbeigeschaut haben, und zögern Sie nicht, mich zu kontaktieren, wenn Sie Fragen haben oder zusammenarbeiten möchten!",
+  "password": {
+    "label": "Kennwort",
+    "placeholder": "passwort platzhalter..."
+  },
+  "location": "Geben Sie den Standort ein",
+  "Address": "Gib die Adresse ein"
+}

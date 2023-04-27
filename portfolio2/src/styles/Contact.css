@@ -1,0 +1,15 @@
+.contact {
+  padding-top: 25px;
+  text-align: center;
+  font-family: "DynaPuff", cursive;
+  font-size: 20px;
+  color: #f0f5ef;
+}
+
+.contact h2 {
+  padding-top: 25px;
+}
+
+.contact span {
+  color: #f00;
+}

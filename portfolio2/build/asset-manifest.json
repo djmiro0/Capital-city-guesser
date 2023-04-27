@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d7700466.css",
+    "main.js": "/static/js/main.aa02f65a.js",
+    "static/media/tic-tac-toe-g8a8527653_1920.jpg": "/static/media/tic-tac-toe-g8a8527653_1920.e0cf2757898fd7759fd0.jpg",
+    "static/media/no-background.png": "/static/media/no-background.0689ee67b6abb7dcec69.png",
+    "static/media/infitcompanylogo.png": "/static/media/infitcompanylogo.df1bbf4f54d2b983394a.png",
+    "static/media/programs.png": "/static/media/programs.e744a84dd9cdfe482787.png",
+    "static/media/stars.gif": "/static/media/stars.e23d774e7f9cd936697a.gif",
+    "static/media/bravura.logo.jpg": "/static/media/bravura.logo.97a05b55f36389c5e0d1.jpg",
+    "index.html": "/index.html",
+    "main.d7700466.css.map": "/static/css/main.d7700466.css.map",
+    "main.aa02f65a.js.map": "/static/js/main.aa02f65a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7700466.css",
+    "static/js/main.aa02f65a.js"
+  ]
+}

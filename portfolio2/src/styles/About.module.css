@@ -1,0 +1,47 @@
+.body {
+  line-height: 2;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  margin: 150px 0;
+}
+
+.web {
+  color: #f00;
+  text-decoration: none;
+}
+
+.h1:hover {
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+  width: fit-content;
+  font-family: "DynaPuff", cursive;
+  border: 2px solid #f0f5ef;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 20px;
+  border-radius: 2rem;
+  padding: 1rem;
+  color: #f00;
+}
+
+.button:hover {
+  background-color: #f00;
+  border: 2px solid #f00;
+  color: #000;
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+.dropdown p {
+  font-family: "DynaPuff", cursive;
+  font-size: 20px;
+  color: #f0f5ef;
+  text-align: center;
+  margin-top: 50px;
+}

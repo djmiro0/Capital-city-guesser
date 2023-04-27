@@ -1,0 +1,45 @@
+.aboutMeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px;
+}
+
+.programs {
+  background-image: url("/src/images/programs.png");
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 200px;
+  margin: 50px auto;
+  border-radius: 5rem;
+}
+
+.programs:hover {
+  width: 620px;
+  height: 220px;
+}
+
+@media (max-width: 600px) {
+  .programs {
+    display: none;
+  }
+}
+
+.aboutMeText {
+  font-family: "DynaPuff", cursive;
+  font-size: 20px;
+  color: #f0f5ef;
+  width: 500px;
+  text-align: left;
+}
+
+.img {
+  height: 500px;
+  width: 500px;
+  background-image: url("/src/images/no-background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  align-self: flex-start;
+}
