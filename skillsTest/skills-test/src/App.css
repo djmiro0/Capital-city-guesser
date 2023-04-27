@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* STYLES FOR THE RULES */
+h2 {
+  border: 2px solid rgb(150, 36, 36);
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 10px;
+  margin: 20px auto;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* when clicked it will change size */
+h2:active {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.rules {
+  width: 300px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* container for the div that shows the randomly selected cities */
+.citiesContainer {
+  border: 2px solid black;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+button {
+  margin: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(150, 36, 36);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(150, 36, 36);
+  border: 2px solid rgb(150, 36, 36);
+}
+
+button:active {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ready {
+  background-color: rgb(150, 36, 36);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.ready:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(150, 36, 36);
+  border: 2px solid rgb(150, 36, 36);
+}
+
+.ready:active {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.points {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(150, 36, 36);
+}
